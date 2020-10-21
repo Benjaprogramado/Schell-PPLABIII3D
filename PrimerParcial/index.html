@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/Entidades.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/LogoAutos.png" />
+    <title>Ultra Cars</title>
+</head>
+<!-- ID-TITULO-TRANSACCION-DESCRIPCION-PRECIO-ANIMAL-RAZA-FECHANAC-VACUNA -->
+
+<body>
+    <header>
+        <a href="./"><img src="./img/LogoAutos.png" alt="logo empresa" id="logo"></a>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="miSeccion">
+
+        <h1>Administracion</h1>
+
+        <img src="./img/autos1.jpg" alt="Imagen Principal" id="imgPpal">
+
+        <form action="#" id="form">
+            <fieldset>
+                <legend>Informacion de Anuncio</legend>
+
+                <div id="tresPrimeros"></div>
+
+                <div>
+                    <label id="lblId" for="idAnuncio" hidden>Id</label>
+                    <input type="text" id="idAnuncio" name="idAnuncio" hidden disabled>
+                </div>
+
+                <div>
+                    <label for="txtTitulo">Titulo</label>
+                    <input placeholder="Titulo" type="text" id="txtTitulo" name="titulo" required></input>
+                </div>
+
+                <div>
+                    <label for="txtTransaccion">Transaccion</label>
+                    <div id="divTransaccion">
+                        <select id="txtTransaccion" name="transaccion" required>
+                            <option value="Venta">Venta</option>
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Permuta">Permuta</option>
+                            <option value="nada" selected>--Elegir--</option>
+                        </select>
+
+                    </div>
+
+                    <!-- <input placeholder="Transaccion" type="text" id="txtTransaccion" name="transaccion" required></input> -->
+                </div>
+
+                <div>
+                    <label for="txtDescripcion">Descripcion</label>
+                    <input placeholder="Descripcion" type="text" id="txtDescripcion" name="descripcion"
+                        required></input>
+                </div>
+
+                <div>
+                    <label for="numPrecio">Precio</label>
+                    <input placeholder="Precio" type="text" id="numPrecio" name="precio" required></input>
+                </div>
+
+                <!-- <div>
+                    <fieldset id="perroGato">
+                        <legend>Animal</legend>
+                        <div>
+                            <label for="perro">Perro</label>
+                            <input type="radio" name="animal" value="Perro" id="perro" required>
+                            <label for="gato">Gato</label>
+                            <input type="radio" name="animal" value="Gato" id="gato" required>
+                        </div>
+
+                        </input>
+                    </fieldset>
+                </div> -->
+
+                <div id="tresUltimos">
+
+                    <div class="divs">
+                        <label for="raza"><img src="./img/puertas.png" alt="puertas" class="icon"></label>
+                        <input placeholder="Puertas..." type="text" id="txtPuertas" name="num_puertas" required></input>
+                    </div>
+
+                    <div class="divs">
+                        <label for="fecha"><img src="./img/kms.png" alt="kms" class="icon"></label>
+                        <input placeholder="kms..." type="text" id="kms" name="num_KMs" required></input>
+                    </div>
+
+                    <div class="divs">
+                        <label for="fecha"><img src="./img/potencia.png" alt="motor" class="icon"></label>
+                        <input placeholder="Potencia..." type="text" id="txtPotencia" name="potencia" required></input>
+                    </div>
+
+                    <!-- <div class="divs">
+                        <label for="vacuna"><img src="./img/potencia.png" alt="imagen cigueña" class="icon"></label>
+                        <br>
+                        <select id="vacuna" name="Vacuna" required>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                            <option value="nada" selected>--Elegir--</option>
+                        </select>
+                    </div> -->
+
+                </div>
+                <!-- <div>
+                    <label for="txtTransaccion" hidden>Transaccion</label>
+                    <input placeholder="Transaccion" type="text" id="txtTransaccion" name="transaccion" hidden></input>
+                </div> -->
+
+                <br>
+                     <button type="submit" id="btnCrearModificar" value="Guardar"><img src="./img/Guardar.png" alt=""
+                        class="icon"> Guardar</input>
+                    <button type="button" id="btnBorrar" hidden><img src="./img/Eliminar.png" alt="Imagen Eliminar"
+                            class="icon"> Eliminar</button>
+                    <button type="button" id="btnCancelar" hidden><img src="./img/Eliminar.png" alt="Imagen Cancelar"
+                            class="icon"> Cancelar</button>
+            </fieldset>
+        </form>
+        <br>
+
+        <fieldset>
+            <div id="divTabla"></div>
+        </fieldset>
+
+    </div>
+    <br>
+
+    <footer>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+
+</body>
+
+</html>
